@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responsive Web Page Project</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="#top">EliasDev</a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="navLinks">
+        ☰
+        <span class="sr-only">Menu</span>
+      </button>
+
+      <div id="navLinks" class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <h1>Responsive UI built with Flexbox + Grid</h1>
+          <p>
+            A clean, mobile-friendly landing page demonstrating layout fundamentals,
+            usability, and small JavaScript interactions.
+          </p>
+          <div class="hero-actions">
+            <button class="btn primary" id="scrollToPricing">See Pricing</button>
+            <a class="btn" href="#features">Explore Features</a>
+          </div>
+          <p class="meta">HTML • CSS (Flexbox/Grid) • JavaScript</p>
+        </div>
+
+        <div class="hero-card">
+          <h2>Quick Highlights</h2>
+          <ul>
+            <li>Mobile-first design</li>
+            <li>Flexible layout</li>
+            <li>Clean structure</li>
+            <li>Accessible nav toggle</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="section-title">
+        <h2>Features</h2>
+        <p>Simple, readable, and easy to expand.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Responsive Layout</h3>
+          <p>Uses Grid for major sections and Flexbox for alignment and navigation.</p>
+        </article>
+        <article class="card">
+          <h3>Reusable Components</h3>
+          <p>Buttons, cards, and spacing tokens are consistent across the page.</p>
+        </article>
+        <article class="card">
+          <h3>Usability Focus</h3>
+          <p>Readable typography, sensible spacing, and clear section hierarchy.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="pricing" class="section alt">
+      <div class="section-title">
+        <h2>Pricing</h2>
+        <p>Example section to demonstrate a responsive card grid.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <article class="price-card">
+          <h3>Starter</h3>
+          <p class="price">$0</p>
+          <ul>
+            <li>Basic layout</li>
+            <li>Mobile-first</li>
+            <li>Clean structure</li>
+          </ul>
+          <button class="btn primary">Choose</button>
+        </article>
+
+        <article class="price-card featured">
+          <h3>Pro</h3>
+          <p class="price">$12</p>
+          <ul>
+            <li>Extra polish</li>
+            <li>Better spacing</li>
+            <li>More sections</li>
+          </ul>
+          <button class="btn primary">Choose</button>
+        </article>
+
+        <article class="price-card">
+          <h3>Team</h3>
+          <p class="price">$29</p>
+          <ul>
+            <li>Scalable layout</li>
+            <li>Component pattern</li>
+            <li>Easy updates</li>
+          </ul>
+          <button class="btn primary">Choose</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="section-title">
+        <h2>Contact</h2>
+        <p>Example form layout (no backend).</p>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <label>
+          Name
+          <input type="text" name="name" required />
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" required />
+        </label>
+
+        <label class="full">
+          Message
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+
+        <button class="btn primary full" type="submit">Send</button>
+        <p class="form-status" id="formStatus" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Elias Sepulveda — Responsive Web Page Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
